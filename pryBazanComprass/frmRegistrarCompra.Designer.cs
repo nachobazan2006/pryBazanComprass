@@ -38,6 +38,7 @@
             dateTimePicker1 = new DateTimePicker();
             comboBox1 = new ComboBox();
             maskedTextBox1 = new MaskedTextBox();
+            lblResultado = new Label();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             SuspendLayout();
             // 
@@ -79,9 +80,9 @@
             // 
             // btnIngresar
             // 
-            btnIngresar.Location = new Point(338, 228);
+            btnIngresar.Location = new Point(335, 225);
             btnIngresar.Name = "btnIngresar";
-            btnIngresar.Size = new Size(75, 23);
+            btnIngresar.Size = new Size(131, 34);
             btnIngresar.TabIndex = 4;
             btnIngresar.Text = "Ingresar";
             btnIngresar.UseVisualStyleBackColor = true;
@@ -99,14 +100,15 @@
             // 
             numericUpDown1.Location = new Point(266, 147);
             numericUpDown1.Name = "numericUpDown1";
-            numericUpDown1.Size = new Size(120, 23);
+            numericUpDown1.Size = new Size(100, 23);
             numericUpDown1.TabIndex = 6;
             // 
             // dateTimePicker1
             // 
+            dateTimePicker1.Format = DateTimePickerFormat.Short;
             dateTimePicker1.Location = new Point(266, 74);
             dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(200, 23);
+            dateTimePicker1.Size = new Size(100, 23);
             dateTimePicker1.TabIndex = 7;
             // 
             // comboBox1
@@ -114,7 +116,7 @@
             comboBox1.FormattingEnabled = true;
             comboBox1.Location = new Point(266, 109);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(131, 23);
+            comboBox1.Size = new Size(200, 23);
             comboBox1.TabIndex = 8;
             // 
             // maskedTextBox1
@@ -124,11 +126,23 @@
             maskedTextBox1.Size = new Size(100, 23);
             maskedTextBox1.TabIndex = 9;
             // 
+            // lblResultado
+            // 
+            lblResultado.BorderStyle = BorderStyle.Fixed3D;
+            lblResultado.Font = new Font("Segoe UI", 12F);
+            lblResultado.ForeColor = Color.Blue;
+            lblResultado.Location = new Point(77, 284);
+            lblResultado.Name = "lblResultado";
+            lblResultado.Size = new Size(389, 78);
+            lblResultado.TabIndex = 10;
+            lblResultado.Text = "---";
+            // 
             // frmIngresoCompras
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(lblResultado);
             Controls.Add(maskedTextBox1);
             Controls.Add(comboBox1);
             Controls.Add(dateTimePicker1);
@@ -158,5 +172,6 @@
         private DateTimePicker dateTimePicker1;
         private ComboBox comboBox1;
         private MaskedTextBox maskedTextBox1;
+        private Label lblResultado;
     }
 }
