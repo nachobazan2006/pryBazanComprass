@@ -6,5 +6,17 @@ namespace pryBazanComprass
         {
             InitializeComponent();
         }
+        //VARIABLES GLOBALES
+        vFecha= dtpFecha.value;
+        vProducto = cboProducto.text;
+        private void btnIngresar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtp_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
