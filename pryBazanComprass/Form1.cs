@@ -1,8 +1,8 @@
 namespace pryBazanComprass
 {
-    public partial class Form1 : Form
+    public partial class frmIngresoCompras : Form
     {
-        public Form1()
+        public frmIngresoCompras()
         {
             InitializeComponent();
         }

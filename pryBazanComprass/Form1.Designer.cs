@@ -1,6 +1,6 @@
 ﻿namespace pryBazanComprass
 {
-    partial class Form1
+    partial class frmIngresoCompras
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            button1 = new Button();
-            label5 = new Label();
+            lblFecha = new Label();
+            lblProducto = new Label();
+            lblCantidad = new Label();
+            lblPrecioUnitario = new Label();
+            btnIngresar = new Button();
+            lblTitulo = new Label();
             numericUpDown1 = new NumericUpDown();
             dateTimePicker1 = new DateTimePicker();
             comboBox1 = new ComboBox();
@@ -41,59 +41,59 @@
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             SuspendLayout();
             // 
-            // label1
+            // lblFecha
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(161, 74);
-            label1.Name = "label1";
-            label1.Size = new Size(38, 15);
-            label1.TabIndex = 0;
-            label1.Text = "Fecha";
+            lblFecha.AutoSize = true;
+            lblFecha.Location = new Point(161, 74);
+            lblFecha.Name = "lblFecha";
+            lblFecha.Size = new Size(38, 15);
+            lblFecha.TabIndex = 0;
+            lblFecha.Text = "Fecha";
             // 
-            // label2
+            // lblProducto
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(161, 112);
-            label2.Name = "label2";
-            label2.Size = new Size(56, 15);
-            label2.TabIndex = 1;
-            label2.Text = "Producto";
+            lblProducto.AutoSize = true;
+            lblProducto.Location = new Point(161, 112);
+            lblProducto.Name = "lblProducto";
+            lblProducto.Size = new Size(56, 15);
+            lblProducto.TabIndex = 1;
+            lblProducto.Text = "Producto";
             // 
-            // label3
+            // lblCantidad
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(161, 149);
-            label3.Name = "label3";
-            label3.Size = new Size(55, 15);
-            label3.TabIndex = 2;
-            label3.Text = "Cantidad";
+            lblCantidad.AutoSize = true;
+            lblCantidad.Location = new Point(161, 149);
+            lblCantidad.Name = "lblCantidad";
+            lblCantidad.Size = new Size(55, 15);
+            lblCantidad.TabIndex = 2;
+            lblCantidad.Text = "Cantidad";
             // 
-            // label4
+            // lblPrecioUnitario
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(161, 185);
-            label4.Name = "label4";
-            label4.Size = new Size(85, 15);
-            label4.TabIndex = 3;
-            label4.Text = "Precio Unitario";
+            lblPrecioUnitario.AutoSize = true;
+            lblPrecioUnitario.Location = new Point(161, 185);
+            lblPrecioUnitario.Name = "lblPrecioUnitario";
+            lblPrecioUnitario.Size = new Size(85, 15);
+            lblPrecioUnitario.TabIndex = 3;
+            lblPrecioUnitario.Text = "Precio Unitario";
             // 
-            // button1
+            // btnIngresar
             // 
-            button1.Location = new Point(338, 228);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 4;
-            button1.Text = "Ingresar";
-            button1.UseVisualStyleBackColor = true;
+            btnIngresar.Location = new Point(338, 228);
+            btnIngresar.Name = "btnIngresar";
+            btnIngresar.Size = new Size(75, 23);
+            btnIngresar.TabIndex = 4;
+            btnIngresar.Text = "Ingresar";
+            btnIngresar.UseVisualStyleBackColor = true;
             // 
-            // label5
+            // lblTitulo
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(38, 22);
-            label5.Name = "label5";
-            label5.Size = new Size(259, 15);
-            label5.TabIndex = 5;
-            label5.Text = "Bienvenido al programa de ingreso de compras.";
+            lblTitulo.AutoSize = true;
+            lblTitulo.Location = new Point(38, 22);
+            lblTitulo.Name = "lblTitulo";
+            lblTitulo.Size = new Size(259, 15);
+            lblTitulo.TabIndex = 5;
+            lblTitulo.Text = "Bienvenido al programa de ingreso de compras.";
             // 
             // numericUpDown1
             // 
@@ -124,7 +124,7 @@
             maskedTextBox1.Size = new Size(100, 23);
             maskedTextBox1.TabIndex = 9;
             // 
-            // Form1
+            // frmIngresoCompras
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -133,14 +133,14 @@
             Controls.Add(comboBox1);
             Controls.Add(dateTimePicker1);
             Controls.Add(numericUpDown1);
-            Controls.Add(label5);
-            Controls.Add(button1);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Name = "Form1";
-            Text = "Form1";
+            Controls.Add(lblTitulo);
+            Controls.Add(btnIngresar);
+            Controls.Add(lblPrecioUnitario);
+            Controls.Add(lblCantidad);
+            Controls.Add(lblProducto);
+            Controls.Add(lblFecha);
+            Name = "frmIngresoCompras";
+            Text = "Ingreso Compras";
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -148,12 +148,12 @@
 
         #endregion
 
-        private Label label1;
-        private Label label2;
-        private Label label3;
-        private Label label4;
-        private Button button1;
-        private Label label5;
+        private Label lblFecha;
+        private Label lblProducto;
+        private Label lblCantidad;
+        private Label lblPrecioUnitario;
+        private Button btnIngresar;
+        private Label lblTitulo;
         private NumericUpDown numericUpDown1;
         private DateTimePicker dateTimePicker1;
         private ComboBox comboBox1;
