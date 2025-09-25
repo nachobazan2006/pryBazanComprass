@@ -37,7 +37,7 @@
             CantidadNum = new NumericUpDown();
             cboProducto = new ComboBox();
             mkbPrecioUnitaerio = new MaskedTextBox();
-            lblResultado = new Label();
+            lstResultado = new Label();
             dtpFecha = new DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)CantidadNum).BeginInit();
             SuspendLayout();
@@ -121,20 +121,22 @@
             // mkbPrecioUnitaerio
             // 
             mkbPrecioUnitaerio.Location = new Point(266, 182);
+            mkbPrecioUnitaerio.Mask = "$99999";
             mkbPrecioUnitaerio.Name = "mkbPrecioUnitaerio";
             mkbPrecioUnitaerio.Size = new Size(100, 23);
             mkbPrecioUnitaerio.TabIndex = 9;
+            mkbPrecioUnitaerio.ValidatingType = typeof(int);
             // 
-            // lblResultado
+            // lstResultado
             // 
-            lblResultado.BorderStyle = BorderStyle.Fixed3D;
-            lblResultado.Font = new Font("Segoe UI", 12F);
-            lblResultado.ForeColor = Color.Blue;
-            lblResultado.Location = new Point(77, 284);
-            lblResultado.Name = "lblResultado";
-            lblResultado.Size = new Size(389, 78);
-            lblResultado.TabIndex = 10;
-            lblResultado.Text = "---";
+            lstResultado.BorderStyle = BorderStyle.Fixed3D;
+            lstResultado.Font = new Font("Segoe UI", 12F);
+            lstResultado.ForeColor = Color.Blue;
+            lstResultado.Location = new Point(77, 284);
+            lstResultado.Name = "lstResultado";
+            lstResultado.Size = new Size(389, 78);
+            lstResultado.TabIndex = 10;
+            lstResultado.Text = "---";
             // 
             // dtpFecha
             // 
@@ -151,7 +153,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Silver;
             ClientSize = new Size(800, 450);
-            Controls.Add(lblResultado);
+            Controls.Add(lstResultado);
             Controls.Add(mkbPrecioUnitaerio);
             Controls.Add(cboProducto);
             Controls.Add(dtpFecha);
@@ -181,7 +183,7 @@
         private DateTimePicker dtp;
         private ComboBox cboProducto;
         private MaskedTextBox mkbPrecioUnitaerio;
-        private Label lblResultado;
+        private Label lstResultado;
         private DateTimePicker dtpFecha;
     }
 }
