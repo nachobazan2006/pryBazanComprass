@@ -35,56 +35,56 @@
             btnIngresar = new Button();
             lblTitulo = new Label();
             CantidadNum = new NumericUpDown();
-            cboProducto = new ComboBox();
             mkbPrecioUnitaerio = new MaskedTextBox();
             lstResultado = new Label();
             dtpFecha = new DateTimePicker();
+            txtProducto = new TextBox();
             ((System.ComponentModel.ISupportInitialize)CantidadNum).BeginInit();
             SuspendLayout();
             // 
             // lblFecha
             // 
             lblFecha.AutoSize = true;
-            lblFecha.Font = new Font("Sitka Banner", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblFecha.Location = new Point(161, 74);
+            lblFecha.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblFecha.Location = new Point(142, 74);
             lblFecha.Name = "lblFecha";
-            lblFecha.Size = new Size(46, 23);
+            lblFecha.Size = new Size(52, 21);
             lblFecha.TabIndex = 0;
             lblFecha.Text = "Fecha";
             // 
             // lblProducto
             // 
             lblProducto.AutoSize = true;
-            lblProducto.Font = new Font("Sitka Banner", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblProducto.Location = new Point(161, 112);
+            lblProducto.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblProducto.Location = new Point(142, 110);
             lblProducto.Name = "lblProducto";
-            lblProducto.Size = new Size(65, 23);
+            lblProducto.Size = new Size(78, 21);
             lblProducto.TabIndex = 1;
             lblProducto.Text = "Producto";
             // 
             // lblCantidad
             // 
             lblCantidad.AutoSize = true;
-            lblCantidad.Font = new Font("Sitka Banner", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblCantidad.Location = new Point(161, 149);
+            lblCantidad.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblCantidad.Location = new Point(142, 147);
             lblCantidad.Name = "lblCantidad";
-            lblCantidad.Size = new Size(66, 23);
+            lblCantidad.Size = new Size(75, 21);
             lblCantidad.TabIndex = 2;
             lblCantidad.Text = "Cantidad";
             // 
             // lblPrecioUnitario
             // 
             lblPrecioUnitario.AutoSize = true;
-            lblPrecioUnitario.Font = new Font("Sitka Banner", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblPrecioUnitario.Location = new Point(161, 185);
+            lblPrecioUnitario.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblPrecioUnitario.Location = new Point(142, 184);
             lblPrecioUnitario.Name = "lblPrecioUnitario";
-            lblPrecioUnitario.Size = new Size(103, 23);
+            lblPrecioUnitario.Size = new Size(118, 21);
             lblPrecioUnitario.TabIndex = 3;
             lblPrecioUnitario.Text = "Precio Unitario";
             // 
             // btnIngresar
             // 
-            btnIngresar.Font = new Font("Sitka Banner", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnIngresar.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnIngresar.Location = new Point(335, 225);
             btnIngresar.Name = "btnIngresar";
             btnIngresar.Size = new Size(131, 34);
@@ -96,10 +96,10 @@
             // lblTitulo
             // 
             lblTitulo.AutoSize = true;
-            lblTitulo.Font = new Font("Sitka Banner", 20.2499981F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            lblTitulo.Location = new Point(38, 22);
+            lblTitulo.Font = new Font("Segoe UI Semibold", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTitulo.Location = new Point(12, 9);
             lblTitulo.Name = "lblTitulo";
-            lblTitulo.Size = new Size(530, 39);
+            lblTitulo.Size = new Size(715, 45);
             lblTitulo.TabIndex = 5;
             lblTitulo.Text = "Bienvenido al programa de ingreso de compras.";
             // 
@@ -109,14 +109,6 @@
             CantidadNum.Name = "CantidadNum";
             CantidadNum.Size = new Size(100, 23);
             CantidadNum.TabIndex = 6;
-            // 
-            // cboProducto
-            // 
-            cboProducto.FormattingEnabled = true;
-            cboProducto.Location = new Point(266, 109);
-            cboProducto.Name = "cboProducto";
-            cboProducto.Size = new Size(200, 23);
-            cboProducto.TabIndex = 8;
             // 
             // mkbPrecioUnitaerio
             // 
@@ -147,15 +139,22 @@
             dtpFecha.TabIndex = 7;
             dtpFecha.ValueChanged += dtp_ValueChanged;
             // 
+            // txtProducto
+            // 
+            txtProducto.Location = new Point(266, 112);
+            txtProducto.Name = "txtProducto";
+            txtProducto.Size = new Size(100, 23);
+            txtProducto.TabIndex = 11;
+            // 
             // frmIngresoCompras
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Silver;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(727, 563);
+            Controls.Add(txtProducto);
             Controls.Add(lstResultado);
             Controls.Add(mkbPrecioUnitaerio);
-            Controls.Add(cboProducto);
             Controls.Add(dtpFecha);
             Controls.Add(CantidadNum);
             Controls.Add(lblTitulo);
@@ -181,9 +180,9 @@
         private Label lblTitulo;
         private NumericUpDown CantidadNum;
         private DateTimePicker dtp;
-        private ComboBox cboProducto;
         private MaskedTextBox mkbPrecioUnitaerio;
         private Label lstResultado;
         private DateTimePicker dtpFecha;
+        private TextBox txtProducto;
     }
 }
