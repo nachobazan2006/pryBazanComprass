@@ -19,7 +19,7 @@ namespace pryBazanComprass
         private void btnIngresar_Click(object sender, EventArgs e)
         {
             vContador++;
-            vProducto = cboProducto.Text;
+            vProducto = txtProducto.Text;
             vFecha = dtpFecha.Value;
             int vCantidad = Convert.ToInt32(CantidadNum.Text);
             vCantidad = vCantidad;
@@ -30,11 +30,11 @@ namespace pryBazanComprass
             vPrecio = vPrecioUnitario;
             lstResultado.Text = "Producto: " + vProducto + " Fecha: " + vFecha + " Cantidad: " + vCantidad + " Precio Unitario: " + vPrecioUnitario;
 
-            cboProducto.Text = "";
+            txtProducto.Text = "";
             dtpFecha.Value = DateTime.Now;
             CantidadNum.Value = 0;
             mkbPrecioUnitaerio.Text = "";
-            cboProducto.Focus();
+            txtProducto.Focus();
         }
 
         private void dtp_ValueChanged(object sender, EventArgs e)

@@ -45,47 +45,47 @@
             // lblFecha
             // 
             lblFecha.AutoSize = true;
-            lblFecha.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblFecha.Location = new Point(142, 74);
+            lblFecha.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblFecha.Location = new Point(121, 74);
             lblFecha.Name = "lblFecha";
-            lblFecha.Size = new Size(52, 21);
+            lblFecha.Size = new Size(63, 25);
             lblFecha.TabIndex = 0;
             lblFecha.Text = "Fecha";
             // 
             // lblProducto
             // 
             lblProducto.AutoSize = true;
-            lblProducto.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblProducto.Location = new Point(142, 110);
+            lblProducto.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblProducto.Location = new Point(121, 107);
             lblProducto.Name = "lblProducto";
-            lblProducto.Size = new Size(78, 21);
+            lblProducto.Size = new Size(90, 25);
             lblProducto.TabIndex = 1;
             lblProducto.Text = "Producto";
             // 
             // lblCantidad
             // 
             lblCantidad.AutoSize = true;
-            lblCantidad.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblCantidad.Location = new Point(142, 147);
+            lblCantidad.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblCantidad.Location = new Point(121, 147);
             lblCantidad.Name = "lblCantidad";
-            lblCantidad.Size = new Size(75, 21);
+            lblCantidad.Size = new Size(91, 25);
             lblCantidad.TabIndex = 2;
             lblCantidad.Text = "Cantidad";
             // 
             // lblPrecioUnitario
             // 
             lblPrecioUnitario.AutoSize = true;
-            lblPrecioUnitario.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblPrecioUnitario.Location = new Point(142, 184);
+            lblPrecioUnitario.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblPrecioUnitario.Location = new Point(121, 177);
             lblPrecioUnitario.Name = "lblPrecioUnitario";
-            lblPrecioUnitario.Size = new Size(118, 21);
+            lblPrecioUnitario.Size = new Size(139, 25);
             lblPrecioUnitario.TabIndex = 3;
             lblPrecioUnitario.Text = "Precio Unitario";
             // 
             // btnIngresar
             // 
             btnIngresar.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnIngresar.Location = new Point(335, 225);
+            btnIngresar.Location = new Point(247, 253);
             btnIngresar.Name = "btnIngresar";
             btnIngresar.Size = new Size(131, 34);
             btnIngresar.TabIndex = 4;
@@ -96,10 +96,10 @@
             // lblTitulo
             // 
             lblTitulo.AutoSize = true;
-            lblTitulo.Font = new Font("Segoe UI Semibold", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTitulo.Font = new Font("Segoe UI Semibold", 21.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             lblTitulo.Location = new Point(12, 9);
             lblTitulo.Name = "lblTitulo";
-            lblTitulo.Size = new Size(715, 45);
+            lblTitulo.Size = new Size(636, 40);
             lblTitulo.TabIndex = 5;
             lblTitulo.Text = "Bienvenido al programa de ingreso de compras.";
             // 
@@ -124,9 +124,9 @@
             lstResultado.BorderStyle = BorderStyle.Fixed3D;
             lstResultado.Font = new Font("Segoe UI", 12F);
             lstResultado.ForeColor = Color.Blue;
-            lstResultado.Location = new Point(77, 284);
+            lstResultado.Location = new Point(29, 310);
             lstResultado.Name = "lstResultado";
-            lstResultado.Size = new Size(389, 78);
+            lstResultado.Size = new Size(349, 328);
             lstResultado.TabIndex = 10;
             lstResultado.Text = "---";
             // 
@@ -150,8 +150,8 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Silver;
-            ClientSize = new Size(727, 563);
+            BackColor = Color.WhiteSmoke;
+            ClientSize = new Size(657, 669);
             Controls.Add(txtProducto);
             Controls.Add(lstResultado);
             Controls.Add(mkbPrecioUnitaerio);
