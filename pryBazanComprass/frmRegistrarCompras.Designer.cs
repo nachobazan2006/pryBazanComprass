@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmIngresoCompras));
             lblFecha = new Label();
             lblProducto = new Label();
             lblCantidad = new Label();
@@ -137,7 +138,6 @@
             dtpFecha.Name = "dtpFecha";
             dtpFecha.Size = new Size(100, 23);
             dtpFecha.TabIndex = 7;
-          
             // 
             // txtProducto
             // 
@@ -163,6 +163,7 @@
             Controls.Add(lblCantidad);
             Controls.Add(lblProducto);
             Controls.Add(lblFecha);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "frmIngresoCompras";
             Text = "Ingreso Compras";
             ((System.ComponentModel.ISupportInitialize)CantidadNum).EndInit();
