@@ -137,7 +137,7 @@
             dtpFecha.Name = "dtpFecha";
             dtpFecha.Size = new Size(100, 23);
             dtpFecha.TabIndex = 7;
-            dtpFecha.ValueChanged += dtp_ValueChanged;
+          
             // 
             // txtProducto
             // 

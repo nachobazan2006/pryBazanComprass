@@ -14,10 +14,15 @@ namespace pryBazanComprass
         int vPrecio;
         int vContador;
 
-        //vFecha= dtpFecha.value;
-        //vProducto = cboProducto.text;
+        
         private void btnIngresar_Click(object sender, EventArgs e)
         {
+           if (string.IsNullOrEmpty(txtProducto.Text))
+            {
+                MessageBox.Show("Debe ingresar un nombre de producto");
+                    }
+           else {
+
             vContador++;
             vProducto = txtProducto.Text;
             vFecha = dtpFecha.Value;
@@ -35,6 +40,7 @@ namespace pryBazanComprass
             CantidadNum.Value = 0;
             mkbPrecioUnitaerio.Text = "";
             txtProducto.Focus();
+            }
         }
 
         private void dtp_ValueChanged(object sender, EventArgs e)
